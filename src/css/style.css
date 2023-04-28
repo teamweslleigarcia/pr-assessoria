@@ -714,7 +714,7 @@ figure.profile .autor h1 {
 figure.profile .autor span {
 
   font-size: 1em;
-  color: #06d3d7;
+  color: var(--gold-light);
   top: 55%;
   font-weight: 500;
 
