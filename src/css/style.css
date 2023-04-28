@@ -607,6 +607,119 @@ section .title-section{
     height: 100%;
 }
 
+figure.profile {
+
+  font-family: 'open_sansregular';
+  position: relative;
+  overflow: hidden;
+  margin:auto;
+  max-width: 500px;
+  width: 100%;
+  color: var(--white);
+  text-align: left;
+  box-shadow: none !important;
+
+}
+
+figure.profile * {
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+figure.profile img {
+
+  max-width: 100%;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: 55%;
+
+}
+
+figure.profile blockquote {
+
+  margin: 0;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--primary);
+  padding: 65px 50px 35px 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: -40px 0 0;
+  line-height: 1.6em;
+  box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+  border-bottom: 2px #dfdfdf solid;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+figure.profile blockquote:before,
+figure.profile blockquote:after {
+  font-family: 'untitled-font-1';
+  content: open-quote;
+  position: absolute;
+  font-size: 48px;
+  opacity: 0.2;
+  font-style: normal;
+  
+}
+
+figure.profile blockquote:before {
+  top: 55px;
+  left: 20px;
+}
+
+figure.profile blockquote:after {
+  content: close-quote;
+  right: 30px;
+  bottom: 15px;
+}
+
+figure.profile .autor {
+  margin: 0;
+  height: 80px;
+  display: block;
+  text-align: left;
+  padding: 0 35px;
+  position: relative;
+  z-index: 1;
+}
+
+figure.profile .autor h1,
+figure.profile .autor span {
+  left: 45%;
+  position: absolute;
+  padding: 3px 5px;
+}
+
+figure.profile .autor h1 {
+  
+  bottom: 50%;
+  margin: 0;
+  font-size:1.3em; 
+  color: #4c4c4c;
+
+}
+
+figure.profile .autor span {
+
+  font-size: 1em;
+  color: #06d3d7;
+  top: 55%;
+  font-weight: 500;
+
+}
+
 .section-depoimentos{
     width: 100%;
     display: flex;
