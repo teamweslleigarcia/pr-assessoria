@@ -18,7 +18,7 @@
 
 body, html{
     background-color: var(--white);
-    width: 100vw;
+    width: 100%;
 }
 
 nav{
@@ -34,19 +34,24 @@ nav{
 }
 
 footer{
-    height: 60px;
+    width: 100%;
     background-color: var(--primary);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-
-    border-top: 2px solid var(--gold-dark);
+    
+  border-top: 2px solid var(--gold-dark);
+    
 }
 
-footer p{
-     color: white;
-     margin-right: 5px;
+.footer{
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.footer p{
+  color: white;
+  margin-right: 5px;
 }
 
 
@@ -334,6 +339,7 @@ section{
 }
 
 #eu-paula-regina{
+    width: 100%;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -501,12 +507,12 @@ section{
 /* FIM CAROUSELCERTIFICADOS */
 
 section .title-section{
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*background-image: linear-gradient(to right, #bb9043, #ead371);*/
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-image: linear-gradient(to right, #bb9043, #ead371);*/
 }
 
 .linha-horizontal{
@@ -557,7 +563,7 @@ section .title-section{
 }
 .section-servicos .pricing-table .pricing-option {
   width: 28%;
-  background: white;
+  background: var(--primary);
   float: left;
   padding: 2%;
   text-align: center;
@@ -574,7 +580,7 @@ section .title-section{
           transform: scale(1.04);
 }
 .section-servicos .pricing-table .pricing-option:hover i, .pricing-table .pricing-option:hover h1, .pricing-table .pricing-option:hover span, .pricing-table .pricing-option:hover b {
-  color: var(--primary);
+  color: var(--white);
 }
 .section-servicos .pricing-table .pricing-option:hover .front {
   opacity: 0;
@@ -594,7 +600,7 @@ section .title-section{
 }
 .section-servicos .pricing-table .pricing-option i {
   font-size: 3rem;
-  color: #333;
+  color: var(--gold-dark);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -620,12 +626,17 @@ section .title-section{
   display: block;
   font-weight: 700;
   position: relative;
+  color: var(--gold-dark);
 }
 .section-servicos .pricing-table .pricing-option .price .front span.price b {
   position: absolute;
   font-size: 1rem;
   margin-left: 2px;
   font-weight: 600;
+}
+
+.section-servicos .pricing-table .pricing-option .price .front span.detail{
+  color: var(--white);
 }
 .section-servicos .pricing-table .pricing-option .price .back {
   opacity: 0;
@@ -634,7 +645,7 @@ section .title-section{
   transition: all .3s ease-in-out;
 }
 .section-servicos .pricing-table .pricing-option .price .back a.button {
-  background: var(--primary);
+  background: var(--gold-dark);
   padding: 15px 20px;
   display: inline-block;
   text-decoration: none;
@@ -1001,7 +1012,7 @@ figure.profile .autor span {
  [type="submit"] {
    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
    width: 100%;
-   background:var(--primary-light);
+   background:var(--gold-dark);
    border-radius:5px;
    border:0;
    cursor:pointer;
@@ -1013,7 +1024,7 @@ figure.profile .autor span {
    margin-top:-4px;
    font-weight:700;
  }
- [type="submit"]:hover { background:var(--secondary); }
+ [type="submit"]:hover { background:var(--gold-light); }
   /* FIM FORM CONTATO*/
 
 .map-contato{
@@ -1176,6 +1187,10 @@ figure.profile .autor span {
 
   .pricing-table .pricing-option i.material-icons {
     font-size: 2rem;
+  }
+
+  .equipe-wrapper i{
+    display: none;
   }
 
 
