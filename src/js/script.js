@@ -1,6 +1,6 @@
-const wrapper = document.querySelector(".equipe-wrapper");
-const carousel = document.querySelector(".equipe-carousel");
-const arrowBtns = document.querySelectorAll(".equipe-wrapper i");
+const wrapper = document.querySelector(".clientes-wrapper");
+const carousel = document.querySelector(".clientes-carousel");
+const arrowBtns = document.querySelectorAll(".clientes-wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
 

@@ -840,7 +840,7 @@ figure.profile .autor span {
     height: 100%;
 }
 
-.section-equipe{
+.section-clientes{
     /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,33,58,1) 15%, rgba(72,10,81,1) 100%); */
     background-color: var(--white);
     display: flex;
@@ -849,13 +849,13 @@ figure.profile .autor span {
     height: 500px;
 }
 
-.equipe-wrapper{
+.clientes-wrapper{
     width: 100%;
     position: relative;
 }
 
 
-.equipe-wrapper i{
+.clientes-wrapper i{
     height: 50px;
     width: 50px;
     background-color: var(--white);
@@ -870,7 +870,7 @@ figure.profile .autor span {
     font-size: 1.25rem;
 }
 
-.equipe-wrapper .equipe-carousel{
+.clientes-wrapper .clientes-carousel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100/3) -12px);
@@ -881,33 +881,33 @@ figure.profile .autor span {
     scroll-behavior: smooth;
 }
 
-.equipe-carousel::-webkit-scrollbar{
+.clientes-carousel::-webkit-scrollbar{
     display: none;
 }
 
-.equipe-carousel:where(.card, .img){
+.clientes-carousel:where(.card, .img){
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.equipe-carousel.no-transition{
+.clientes-carousel.no-transition{
     scroll-behavior: auto;
 }
 
-.equipe-carousel.dragging{
+.clientes-carousel.dragging{
     scroll-snap-type: none;
     scroll-behavior: auto;
 }
 
-.equipe-carousel.dragging .card{
+.clientes-carousel.dragging .card{
     cursor: grab;
     user-select: none;
     
 }
 
-.equipe-carousel .card{
+.clientes-carousel .card{
     scroll-snap-align: start;
     height: 342px;
     width: 300px;
@@ -921,14 +921,14 @@ figure.profile .autor span {
     cursor: pointer;
 }
 
-.equipe-carousel .card .img{
+.clientes-carousel .card .img{
     background-color: var(--gold-dark);
     width: 148px;
     height: 148px;
     border-radius: 50%;
 }
 
-.equipe-carousel .card .img img{
+.clientes-carousel .card .img img{
     width: 140px;
     height: 140px;
     object-fit: cover;
@@ -936,25 +936,25 @@ figure.profile .autor span {
     border: 4px solid var(--gold-light);
 }
 
-.equipe-carousel .card h2{
+.clientes-carousel .card h2{
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
     color: var(--gold-light);
 }
 
-.equipe-carousel .card p{
+.clientes-carousel .card p{
     color: var(--white);
     font-size: 1.31rem;
     
     border: 0;
 }
 
-.equipe-wrapper i:first-child{
+.clientes-wrapper i:first-child{
     left: 22px;
 }
 
-.equipe-wrapper i:last-child{
+.clientes-wrapper i:last-child{
     right: -22px;
 }
 
